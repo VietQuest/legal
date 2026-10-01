@@ -35,8 +35,10 @@ margin-top: 12px;
 <p>VietQuest ("the App", "we", "us") is developed and operated by an independent individual developer. This Privacy Policy explains what information the App collects, how it is used, and the choices you have. By using VietQuest, you agree to the practices described here.</p>
 <h2>1. Information We Collect</h2>
 <h3>1.1 Locally stored data (all users)</h3>
-<p>Your learning progress — streaks, completed levels, scores, settings, and similar data — is stored directly on your device using on-device storage. This data is never transmitted to us unless you choose to create an account (see 1.2).</p>
-<h3>1.2 Account and cloud sync data (optional)</h3>
+<p>Your learning progress — streaks, completed levels, scores, settings, and similar data — is stored directly on your device using on-device storage. This data is never transmitted to us unless you choose to create an account (see 1.3).</p>
+<h3>1.2 Age screening (all users)</h3>
+<p>The first time you open VietQuest, we ask what year you were born. This is used only to determine, on your device, whether you are under 13 — nothing more precise than that is ever asked or recorded. Your birth year itself is never transmitted to us or stored anywhere; only the resulting under-13/13-or-older result is saved, locally on your device, so the App can remember your answer the next time you open it. If you tell us you're under 13, VietQuest automatically: disables account creation and sign-in (see 1.3) so no email or other account data is ever collected from you, and switches advertising to Google's child-directed mode, which turns off ad personalization and restricts ad content (see 1.7). Users who installed VietQuest before this screening existed were not asked and are not affected retroactively.</p>
+<h3>1.3 Account and cloud sync data (optional, 13 and older only)</h3>
 <p>Most of VietQuest's learning content can be used without ever creating an account. If you choose to create an account — by signing in with Google, signing in with Apple, or registering with an email address and password — we collect and store the following via Google Firebase (Authentication and Cloud Firestore):</p>
 <ul>
 <li>Your email address and/or display name, used to identify your account, let you sign back in, and (for email/password accounts) verify your email.</li>
@@ -47,22 +49,23 @@ margin-top: 12px;
 <li>Your referral code and/or a code you redeem, and whether a referral reward was granted, used to operate the referral program.</li>
 <li>Any message you submit through the in-app Feedback form, together with your account ID, so we can respond to it.</li>
 </ul>
-<p>Signing in and creating an account is entirely optional. If you never sign in, none of this data ever leaves your device.</p>
-<h3>1.3 Purchase data (Premium subscribers)</h3>
+<p>Signing in and creating an account is entirely optional, and is not available at all if you told us you're under 13 (see 1.2). If you never sign in, none of this data ever leaves your device.</p>
+<h3>1.4 Purchase data (Premium subscribers)</h3>
 <p>If you subscribe to VietQuest Premium, our subscription management provider, RevenueCat, receives and stores your purchase and subscription status (e.g. active/expired, renewal date) together with your account ID, so the app can verify your Premium entitlement across devices. VietQuest itself never sees or stores your payment card details — these are handled entirely by Apple or Google Play.</p>
-<h3>1.4 Voice recordings (Tone Match feature)</h3>
+<h3>1.5 Voice recordings (Tone Match feature)</h3>
 <p>If you use the "Tone Match" pronunciation practice feature, your microphone audio is analyzed <strong>entirely on your device</strong>. Voice recordings are never uploaded to us or to any third-party server, and are not stored after analysis completes.</p>
-<h3>1.5 Voice recordings (Pronunciation Practice feature)</h3>
+<h3>1.6 Voice recordings (Pronunciation Practice feature)</h3>
 <p>Separately from Tone Match, our Pronunciation Practice feature uses your device's built-in speech recognition (provided by Apple on iOS or Google on Android) to check how closely your spoken words match the target pronunciation. Depending on your device and operating system settings, this may involve your voice recording being processed by Apple's or Google's speech recognition service, which operates under its own privacy policy. We do not store these recordings on our own servers, and the recording is only used to generate a pronunciation score.</p>
-<h3>1.6 Advertising data (free-tier users)</h3>
-<p>Free-tier (non-Premium) users may see ads served by Google AdMob. AdMob may collect your device's advertising identifier (IDFA on iOS, or Android Advertising ID) to serve and measure ads. On iOS, we request your permission via Apple's App Tracking Transparency framework before any such identifier is used; if you decline, you will still see ads, but they will not be personalized. Premium subscribers never see ads and this data is never collected from them.</p>
+<h3>1.7 Advertising data (free-tier users)</h3>
+<p>Free-tier (non-Premium) users may see ads served by Google AdMob. AdMob may collect your device's advertising identifier (IDFA on iOS, or Android Advertising ID) to serve and measure ads. On iOS, we request your permission via Apple's App Tracking Transparency framework before any such identifier is used; if you decline, you will still see ads, but they will not be personalized. If you told us you're under 13 (see 1.2), ads are always non-personalized and content-restricted, and this identifier is not used to personalize ads regardless of any other setting. Premium subscribers never see ads and this data is never collected from them.</p>
 <p>We do not use Facebook SDK, Google Analytics, or any other behavioral analytics or tracking tool beyond what is described above.</p>
-<h3>1.7 Automatically collected technical data</h3>
-<p>Like most online services, our service providers (Google Firebase, Google AdMob, RevenueCat, Sentry) automatically record certain technical information in server logs when the App communicates with their servers — such as IP address, device/OS type, and app version. This is standard technical logging used for operating, securing, and troubleshooting the service, and is not used to build an advertising profile of you beyond what is described in section 1.6.</p>
-<h3>1.8 Crash and error data</h3>
+<h3>1.8 Automatically collected technical data</h3>
+<p>Like most online services, our service providers (Google Firebase, Google AdMob, RevenueCat, Sentry) automatically record certain technical information in server logs when the App communicates with their servers — such as IP address, device/OS type, and app version. This is standard technical logging used for operating, securing, and troubleshooting the service, and is not used to build an advertising profile of you beyond what is described in section 1.7.</p>
+<h3>1.9 Crash and error data</h3>
 <p>If the App encounters an unexpected error, technical diagnostic information (device type, OS version, app version, and the error details/stack trace) is automatically sent to our crash-reporting provider, Sentry, so we can identify and fix bugs. This diagnostic data never includes your personal messages, voice recordings, or learning content.</p>
 <h2>2. How We Use Information</h2>
 <ul>
+<li>To screen, on your device only, whether an account and personalized ads should be offered to you at all (see 1.2).</li>
 <li>To let signed-in users back up and restore their learning progress across devices (Premium feature).</li>
 <li>To operate the Leaderboard, referral program, and multi-device sign-in limit.</li>
 <li>To verify and manage your Premium subscription status.</li>
@@ -76,7 +79,7 @@ margin-top: 12px;
 <li><strong>Google Firebase</strong> (Authentication and Firestore) — our cloud infrastructure provider for account sign-in, progress sync, leaderboard, and referral data.</li>
 <li><strong>RevenueCat</strong> — our subscription management provider, which receives your account ID and purchase/subscription status to manage Premium access.</li>
 <li><strong>Google AdMob</strong> — our advertising provider for free-tier users, subject to Google's own privacy policy.</li>
-<li><strong>Sentry</strong> — our crash and error reporting provider, which receives technical diagnostic data (see 1.8) when the App encounters an unexpected error.</li>
+<li><strong>Sentry</strong> — our crash and error reporting provider, which receives technical diagnostic data (see 1.9) when the App encounters an unexpected error.</li>
 <li><strong>Apple / Google Play</strong> — for processing subscription payments; VietQuest itself never sees or stores your payment card details.</li>
 </ul>
 <p>We do not share your data with any other third party, and we do not sell it.</p>
@@ -102,7 +105,7 @@ margin-top: 12px;
 <p>This permanently deletes your account and the following data from our systems: your email address, learning progress, streak history, gem balance, nickname, referral data, feedback messages, device registration, and Premium subscription linkage. Some anonymized or aggregate data that cannot be tied back to you may be retained. This action cannot be undone.</p>
 <p>To exercise any other rights above, email us at the address in section 9 — we will respond and act on your request within a reasonable time.</p>
 <h2>5. Children's Privacy</h2>
-<p>VietQuest is not directed or marketed to children under the age of 13, and we do not knowingly collect personal information directly from children under 13. Accounts and Premium subscriptions are intended to be created and managed by an adult. If we become aware that we have inadvertently collected personal information from a child under 13 without appropriate consent, we will delete it promptly. If you believe this has happened, please contact us at the email below.</p>
+<p>VietQuest is not directed or marketed to children under the age of 13. As described in section 1.2, the App asks every new user what year they were born and automatically disables account creation/sign-in and switches to child-directed, non-personalized advertising for anyone who tells us they are under 13 — we do not knowingly collect email addresses, nicknames, or other account data from a user who tells us they are under 13. This screening relies on what you tell us; it cannot independently verify your age. Accounts and Premium subscriptions are intended to be created and managed by an adult. If we become aware that we have inadvertently collected personal information from a child under 13 without appropriate consent, we will delete it promptly. If you believe this has happened, please contact us at the email below.</p>
 <h2>6. Security</h2>
 <p>We use industry-standard practices (including Firebase Security Rules and encrypted connections) to protect the data we hold. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
 <h2>7. Your Choices</h2>
