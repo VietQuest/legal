@@ -31,7 +31,7 @@ margin-top: 12px;
 </head>
 <body>
 <h1>Privacy Policy for VietQuest</h1>
-<p class="updated">Effective date: September 27, 2026</p>
+<p class="updated">Effective date: October 2, 2026</p>
 <p>VietQuest ("the App", "we", "us") is developed and operated by an independent individual developer. This Privacy Policy explains what information the App collects, how it is used, and the choices you have. By using VietQuest, you agree to the practices described here.</p>
 <h2>1. Information We Collect</h2>
 <h3>1.1 Locally stored data (all users)</h3>
@@ -52,17 +52,22 @@ margin-top: 12px;
 <p>If you subscribe to VietQuest Premium, our subscription management provider, RevenueCat, receives and stores your purchase and subscription status (e.g. active/expired, renewal date) together with your account ID, so the app can verify your Premium entitlement across devices. VietQuest itself never sees or stores your payment card details — these are handled entirely by Apple or Google Play.</p>
 <h3>1.4 Voice recordings (Tone Match feature)</h3>
 <p>If you use the "Tone Match" pronunciation practice feature, your microphone audio is analyzed <strong>entirely on your device</strong>. Voice recordings are never uploaded to us or to any third-party server, and are not stored after analysis completes.</p>
-<h3>1.5 Advertising data (free-tier users)</h3>
+<h3>1.5 Voice recordings (Pronunciation Practice feature)</h3>
+<p>Separately from Tone Match, our Pronunciation Practice feature uses your device's built-in speech recognition (provided by Apple on iOS or Google on Android) to check how closely your spoken words match the target pronunciation. Depending on your device and operating system settings, this may involve your voice recording being processed by Apple's or Google's speech recognition service, which operates under its own privacy policy. We do not store these recordings on our own servers, and the recording is only used to generate a pronunciation score.</p>
+<h3>1.6 Advertising data (free-tier users)</h3>
 <p>Free-tier (non-Premium) users may see ads served by Google AdMob. AdMob may collect your device's advertising identifier (IDFA on iOS, or Android Advertising ID) to serve and measure ads. On iOS, we request your permission via Apple's App Tracking Transparency framework before any such identifier is used; if you decline, you will still see ads, but they will not be personalized. Premium subscribers never see ads and this data is never collected from them.</p>
 <p>We do not use Facebook SDK, Google Analytics, or any other behavioral analytics or tracking tool beyond what is described above.</p>
-<h3>1.6 Automatically collected technical data</h3>
-<p>Like most online services, our service providers (Google Firebase, Google AdMob, RevenueCat) automatically record certain technical information in server logs when the App communicates with their servers — such as IP address, device/OS type, and app version. This is standard technical logging used for operating, securing, and troubleshooting the service, and is not used to build an advertising profile of you beyond what is described in section 1.5.</p>
+<h3>1.7 Automatically collected technical data</h3>
+<p>Like most online services, our service providers (Google Firebase, Google AdMob, RevenueCat, Sentry) automatically record certain technical information in server logs when the App communicates with their servers — such as IP address, device/OS type, and app version. This is standard technical logging used for operating, securing, and troubleshooting the service, and is not used to build an advertising profile of you beyond what is described in section 1.6.</p>
+<h3>1.8 Crash and error data</h3>
+<p>If the App encounters an unexpected error, technical diagnostic information (device type, OS version, app version, and the error details/stack trace) is automatically sent to our crash-reporting provider, Sentry, so we can identify and fix bugs. This diagnostic data never includes your personal messages, voice recordings, or learning content.</p>
 <h2>2. How We Use Information</h2>
 <ul>
 <li>To let signed-in users back up and restore their learning progress across devices (Premium feature).</li>
 <li>To operate the Leaderboard, referral program, and multi-device sign-in limit.</li>
 <li>To verify and manage your Premium subscription status.</li>
 <li>To operate and measure the AdMob advertising shown to free-tier users.</li>
+<li>To identify, diagnose, and fix technical errors and crashes.</li>
 <li>To provide customer support when you contact us or submit feedback.</li>
 </ul>
 <p>We do not sell your personal information to anyone, and we do not use your learning progress or voice data for advertising purposes.</p>
@@ -71,11 +76,12 @@ margin-top: 12px;
 <li><strong>Google Firebase</strong> (Authentication and Firestore) — our cloud infrastructure provider for account sign-in, progress sync, leaderboard, and referral data.</li>
 <li><strong>RevenueCat</strong> — our subscription management provider, which receives your account ID and purchase/subscription status to manage Premium access.</li>
 <li><strong>Google AdMob</strong> — our advertising provider for free-tier users, subject to Google's own privacy policy.</li>
+<li><strong>Sentry</strong> — our crash and error reporting provider, which receives technical diagnostic data (see 1.8) when the App encounters an unexpected error.</li>
 <li><strong>Apple / Google Play</strong> — for processing subscription payments; VietQuest itself never sees or stores your payment card details.</li>
 </ul>
 <p>We do not share your data with any other third party, and we do not sell it.</p>
 <h3>3.1 International data transfer</h3>
-<p>Our service providers (Google Firebase, Google AdMob, RevenueCat) may process and store data on servers located outside your country of residence, including in the United States or other countries where they operate data centers. By using the App, you understand that your information may be transferred to and processed in countries that may have different data protection laws than your own.</p>
+<p>Our service providers (Google Firebase, Google AdMob, RevenueCat, Sentry) may process and store data on servers located outside your country of residence, including in the United States or other countries where they operate data centers. By using the App, you understand that your information may be transferred to and processed in countries that may have different data protection laws than your own.</p>
 <h2>4. Data Retention, Deletion, and Your Rights</h2>
 <p>Locally stored data remains on your device until you delete the app. Cloud-synced data remains linked to your account until you request deletion.</p>
 <p>Depending on your location, you may have the right to:</p>
